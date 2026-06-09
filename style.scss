@@ -1,0 +1,33 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "header";
+@use "footer";
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+}
+
+.hero {
+  @include flex-center;
+  flex-direction: column;
+  height: 80vh;
+  background-color: $primary-color;
+  color: white;
+
+  button {
+    @include button-style;
+    background: white;
+    color: $primary-color;
+  }
+}
+
+.card {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,16 @@
+header {
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: 20px;
+
+  nav {
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+}
